@@ -1,5 +1,5 @@
 def oxford_comma(array)
   puts array
-  array.join(", ")
+  array.join(", ").sub(/(, )(?!.*, )/i, " and ")
 
 end
