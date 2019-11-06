@@ -1,5 +1,7 @@
 def oxford_comma(array)
-  puts array
-  array.join(", ").sub(/(, )(?!.*, )/i, " and ")
+grr = " and "
+   if array.count >= 3 grr = ", and "
+      
+  array.join(", ").sub(/(, )(?!.*, )/i, grr)
 
 end
